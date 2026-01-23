@@ -1,3 +1,5 @@
+import MyComponent from "./MyComponent"
+
 // 1 - criando componente
 const FirstComponent = () => {
     // lógica da função
@@ -5,6 +7,7 @@ const FirstComponent = () => {
         <div>
             <h2>
                 My first component!
+                <MyComponent/>
             </h2>
         </div>
     )
