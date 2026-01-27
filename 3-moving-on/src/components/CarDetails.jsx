@@ -3,7 +3,7 @@ import React from 'react'
 const CarDetails = ({brand, model, km, color}) => {
   return (
     <div>
-        <h2>Car details</h2>
+        <h2>Car details:</h2>
         <ul>
             <li>Brand: {brand}</li>
             <li>Model: {model}</li>

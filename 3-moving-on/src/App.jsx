@@ -42,6 +42,10 @@ function App() {
 
       {/* desestruturando props*/}
       <CarDetails brand="VW" model="Up!" km={120000} color="white" />
+
+      {/* reutilizando props */}
+      <CarDetails brand="Chevrolet" model="Corsa" km={98001} color="silver" />
+      <CarDetails brand="Fiat" model="Palio" km={125058} color="silver" />
     </div>
   )
 }
