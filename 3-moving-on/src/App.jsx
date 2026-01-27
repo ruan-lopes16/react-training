@@ -12,6 +12,9 @@ import ListRender from './components/ListRender'
 // 7 - render condicional
 import ConditionalRender from './components/ConditionalRender'
 
+// 8 props
+import ShowUserName from './components/ShowUserName'
+
 function App() {
 
   return (
@@ -30,6 +33,9 @@ function App() {
 
       {/* render condicional */}
       <ConditionalRender />
+
+      {/* props */}
+      <ShowUserName name="Ruan"/>
     </div>
   )
 }
