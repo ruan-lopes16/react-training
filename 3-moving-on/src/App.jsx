@@ -28,6 +28,9 @@ const cars = [
 // 12 -fragment
 import Fragment from './components/Fragment'
 
+// 13 - children prop
+import Container from './components/Container'
+
 function App() {
 
   return (
@@ -64,6 +67,15 @@ function App() {
 
       {/** fragment */}
       <Fragment />
+
+      {/** children prop */}
+      <Container>
+        <div>
+          <h2>Test</h2>
+          <p>My container</p>
+          <p>Test - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia autem atque cupiditate rem, vitae modi nisi eaque est temporibus vero velit eligendi excepturi similique a obcaecati laudantium deserunt culpa! </p>
+        </div>
+      </Container>
     </div>
   )
 }
