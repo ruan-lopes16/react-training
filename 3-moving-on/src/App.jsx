@@ -25,6 +25,9 @@ const cars = [
   { id: 3, brand: "Renault", model:"Clio RS", color: "Azul", km: 32000 },
 ]
 
+// 12 -fragment
+import Fragment from './components/Fragment'
+
 function App() {
 
   return (
@@ -58,6 +61,9 @@ function App() {
       {cars.map((car) => (
         <CarDetails key={car.id} brand={car.brand} model={car.model} km={car.km} color={car.color} />
       ))}
+
+      {/** fragment */}
+      <Fragment />
     </div>
   )
 }
