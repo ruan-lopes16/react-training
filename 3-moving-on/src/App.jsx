@@ -31,7 +31,14 @@ import Fragment from './components/Fragment'
 // 13 - children prop
 import Container from './components/Container'
 
+// 14 - funçãp em prop
+import ExecuteFunction from './components/ExecuteFunction'
+
 function App() {
+  // criando função em prop
+  function ShowMessage(){
+    console.log("parent component event")
+  }
 
   return (
     <div style={{paddingBottom: "500px"}}>
@@ -76,6 +83,9 @@ function App() {
           <p>Test - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia autem atque cupiditate rem, vitae modi nisi eaque est temporibus vero velit eligendi excepturi similique a obcaecati laudantium deserunt culpa! </p>
         </div>
       </Container>
+
+      {/** função em prop */}
+      <ExecuteFunction myFunction={ShowMessage}/>
     </div>
   )
 }
